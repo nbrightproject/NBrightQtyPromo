@@ -1,0 +1,31 @@
+@inherits NBrightBuy.QtyPromo.render.RazorTokens<NBrightDNN.NBrightRazor>
+@using System.Globalization
+@using System.Linq
+@using NBrightDNN
+@using Nevoweb.DNN.NBrightBuy.Components
+
+@AddMetaData("resourcepath", "/DesktopModules/NBright/NBrightBuy/App_LocalResources/")
+@AddMetaData("resourcepath", "/DesktopModules/NBright/NBrightQtyPromo/App_LocalResources/")
+
+@{
+    // assign Model, so we can resolve var in VS
+    var product = (ProductData)Model.List.First();
+    var info = (NBrightInfo)product.Info;
+}
+
+@{
+    var hasQtyPromo = HasQtyPromo(product.Info.ItemID);
+    if (hasQtyPromo.ToString() == "true")
+    {
+        <div>QTY PROMOTION ON THIS PRODUCT</div>
+    }
+    else
+    {
+        <div>NO PROMOTION</div>
+    }
+}
+
+<div>
+    @QtyPromoDescription(product.Info.ItemID)
+</div>
+

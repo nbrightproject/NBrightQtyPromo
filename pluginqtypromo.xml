@@ -1,0 +1,59 @@
+<genxml>
+  <files />
+  <hidden>
+    <plugintemplate>
+      <![CDATA[]]>
+    </plugintemplate>
+    <index>20</index>
+  </hidden>
+  <textbox>
+    <ctrl>
+      <![CDATA[QtyPromo]]>
+    </ctrl>
+    <name>
+      <![CDATA[Bulk-Buy]]>
+    </name>
+    <icon>
+      <![CDATA[]]>
+    </icon>
+    <group>
+      <![CDATA[Promotions]]>
+    </group>
+    <path>
+      <![CDATA[/DesktopModules/NBright/NBrightQtyPromo/QtyPromo.ascx]]>
+    </path>
+    <help>
+      <![CDATA[]]>
+    </help>
+    <roles>
+      <![CDATA[Manager,Editor,Administrators]]>
+    </roles>
+    <description>
+      <![CDATA[]]>
+    </description>
+    <assembly>
+      <![CDATA[NBrightBuy.QtyPromo]]>
+    </assembly>
+    <namespaceclass>
+      <![CDATA[Nevoweb.DNN.NBrightBuy.Providers.QtyPromo.PromoEvents]]>
+    </namespaceclass>
+  </textbox>
+  <checkbox>
+    <hidden>
+      <![CDATA[False]]>
+    </hidden>
+    <active>
+      <![CDATA[True]]>
+    </active>
+  </checkbox>
+  <dropdownlist>
+    <providertype selectedtext="Évènements">
+      <![CDATA[06]]>
+    </providertype>
+  </dropdownlist>
+  <checkboxlist />
+  <radiobuttonlist />
+</genxml>
+
+
+

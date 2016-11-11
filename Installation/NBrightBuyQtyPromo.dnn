@@ -18,7 +18,7 @@
 			<components>
 				<component type="ResourceFile">
 					<resourceFiles>
-						<basePath>DesktopModules\NBright\NBrightBuyQtyPromo</basePath>
+						<basePath>DesktopModules\NBright\NBrightQtyPromo</basePath>
 						<resourceFile>
 							<name>NBrightBuyQtyPromo_Resource.zip</name>
 						</resourceFile>

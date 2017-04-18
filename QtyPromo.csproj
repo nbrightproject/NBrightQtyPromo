@@ -87,6 +87,7 @@
     <EmbeddedResource Include="App_LocalResources\Promo.ascx.resx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Installation\NBrightBuyQtyPromo.dnn" />
     <None Include="Themes\config\default\productdisplay.cshtml" />
     <None Include="Themes\config\default\qtypromo.cshtml" />
     <Content Include="pluginqtypromo.xml" />
@@ -102,9 +103,7 @@
   <ItemGroup>
     <None Include="PromoXmlConnector.ashx" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Installation\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(TargetFileName)" "..\..\..\..\..\bin\$(TargetFileName)"

@@ -9,23 +9,23 @@
 
 @{
     // assign Model, so we can resolve var in VS
-    var product = (ProductData)Model.List.First();
-    var info = (NBrightInfo)product.Info;
+    var info = (NBrightInfo)Model.List.First();
 }
 
 @{
-    var hasQtyPromo = HasQtyPromo(product.Info.ItemID);
+    var hasQtyPromo = HasQtyPromo(info.ItemID);
     if (hasQtyPromo.ToString() == "true")
     {
-        <div>QTY PROMOTION ON THIS PRODUCT</div>
+        <div>
+            FROM: @QtyPromoFromPrice(info.ItemID)
+        </div>
+        <div>
+            @QtyPromoDescription(product.Info.ItemID)
+        </div>
     }
     else
     {
         <div>NO PROMOTION</div>
     }
 }
-
-<div>
-    @QtyPromoDescription(product.Info.ItemID)
-</div>
 

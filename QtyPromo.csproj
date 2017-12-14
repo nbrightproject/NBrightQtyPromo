@@ -88,6 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Installation\NBrightBuyQtyPromo.dnn" />
+    <None Include="Themes\config\default\fromprice.cshtml" />
     <None Include="Themes\config\default\productdisplay.cshtml" />
     <None Include="Themes\config\default\qtypromo.cshtml" />
     <Content Include="pluginqtypromo.xml" />

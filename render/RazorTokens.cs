@@ -30,11 +30,17 @@ using DotNetNuke.Entities.Users;
 using NBrightBuy.render;
 using Nevoweb.DNN.NBrightBuy;
 using Nevoweb.DNN.NBrightBuy.Components.Interfaces;
+using Nevoweb.DNN.NBrightBuy.Providers.QtyPromo;
 
 namespace NBrightBuy.QtyPromo.render
 {
-    public class RazorTokens<T> : NBrightBuyRazorTokens<T>
+    public class QtyPromoRazorTokens<T> : NBrightBuyRazorTokens<T>
     {
+
+        public IEncodedString QtyPromoFromPrice(int productId)
+        {
+            return new RawString(NBrightBuyUtils.FormatToStoreCurrency(PromoUtils.CalcQtyPromoFromPrice(PortalSettings.Current.PortalId,productId)));
+        }
 
         public IEncodedString QtyPromoDescription(int productId,string qtypromoref = "")
         {
